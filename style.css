@@ -4697,11 +4697,6 @@ body {
   color: var(--fallback-su, oklch(var(--su) / var(--tw-text-opacity)));
 }
 
-.hover\:text-success-content:hover {
-  --tw-text-opacity: 1;
-  color: var(--fallback-suc, oklch(var(--suc) / var(--tw-text-opacity)));
-}
-
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
