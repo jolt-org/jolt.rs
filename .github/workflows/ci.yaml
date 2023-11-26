@@ -47,15 +47,6 @@ jobs:
       - name: Build 🔨
         run: npm run build
 
-      - name: Check all dirs
-        run: ls -alh
-
-      - name: check public
-        run: ls -alh public
-
-      - name: Check dist directory
-        run: ls -alh dist
-
       - name: Deploy to GitHub Pages 🚀
         if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
