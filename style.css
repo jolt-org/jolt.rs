@@ -4485,6 +4485,11 @@ input.input-lg {
   color: var(--fallback-pc, oklch(var(--pc) / var(--tw-text-opacity)));
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
+}
+
 .text-secondary-content {
   --tw-text-opacity: 1;
   color: var(--fallback-sc, oklch(var(--sc) / var(--tw-text-opacity)));
@@ -4503,11 +4508,6 @@ input.input-lg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
 }
 
 .underline {
@@ -4709,8 +4709,8 @@ body {
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:drop-shadow-\[0_0_100px_rgba\(0\2c 0\2c 0\2c 0\.5\)\]:hover {
-  --tw-drop-shadow: drop-shadow(0 0 100px rgba(0, 0, 0, 0.5));
+.hover\:drop-shadow-\[0_0_100px_rgba\(255\2c 0\2c 85\2c 0\.5\)\]:hover {
+  --tw-drop-shadow: drop-shadow(0 0 100px rgba(255, 0, 85, 0.5));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
