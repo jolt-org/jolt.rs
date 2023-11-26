@@ -4329,6 +4329,11 @@ input.input-lg {
   border-width: 1px;
 }
 
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p, oklch(var(--p) / var(--tw-border-opacity)));
+}
+
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: var(--fallback-s, oklch(var(--s) / var(--tw-border-opacity)));
@@ -4500,6 +4505,11 @@ input.input-lg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -4626,7 +4636,7 @@ input.input-lg {
 }
 
 body {
-  background-color: #ff0055;
+  background-color: #202020;
   position: relative;
   overflow-x: hidden;
 }
@@ -4634,16 +4644,16 @@ body {
 .dot-grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(#202020 1px, transparent 1px);
+  background-image: radial-gradient(#ff0055 1px, transparent 1px);
   background-size: 16px 16px;
-  opacity: 0.2;
+  opacity: 0.23;
   z-index: 0;
 }
 
 .dot-grid-fade {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 70%, #ff0055 100%);
+  background: radial-gradient(ellipse at center, transparent 70%, #202020 100%);
   z-index: 1;
 }
 
@@ -4672,6 +4682,11 @@ body {
   }
 }
 
+.hover\:border-secondary:hover {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-s, oklch(var(--s) / var(--tw-border-opacity)));
+}
+
 .hover\:bg-success:hover {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-su, oklch(var(--su) / var(--tw-bg-opacity)));
@@ -4680,6 +4695,11 @@ body {
 .hover\:text-success:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-su, oklch(var(--su) / var(--tw-text-opacity)));
+}
+
+.hover\:text-success-content:hover {
+  --tw-text-opacity: 1;
+  color: var(--fallback-suc, oklch(var(--suc) / var(--tw-text-opacity)));
 }
 
 .hover\:shadow-2xl:hover {
