@@ -52,7 +52,7 @@ jobs:
           git config --global user.email "actions@github.com"
 
       - name: debug 🐛
-        run: ls -alh dist
+        run: ls -alh
 
       - name: Deploy to GitHub Pages 🚀
         if: github.ref == 'refs/heads/main'
